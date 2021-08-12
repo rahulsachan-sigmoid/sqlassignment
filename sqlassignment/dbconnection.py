@@ -1,3 +1,5 @@
+##You should have separate files for different questions to make it clear
+
 import psycopg2
 import pandas as pd
 
@@ -10,6 +12,8 @@ def solution1(cur):
 
     df.to_excel('Solution1.xlsx', header=["Employee_Id", "Employee_Name", "Manager_Name"], index=False)
 
+##You should have to create class then inside that you should have to create methods
+##Try to write some more comments for the sake of clearity
 
 def solution2(cur):
     cur.execute(
@@ -29,6 +33,7 @@ def solution2(cur):
 def solution3(cur):
     cur.execute("COPY comp FROM '/Users/rahul/PycharmProjects/pythonProject1/sqlassignment/compensation.csv' "
                 "DELIMITER ',' CSV HEADER;")
+
 
 
 def solution4(cur):
